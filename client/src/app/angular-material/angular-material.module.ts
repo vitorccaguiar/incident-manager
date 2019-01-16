@@ -7,6 +7,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -19,6 +25,12 @@ import { MatButtonModule } from '@angular/material/button';
     MatSelectModule,
     MatCardModule,
     MatButtonModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatDividerModule,
+    MatIconModule,
+    MatDialogModule,
   ],
   exports: [
     MatMenuModule,
@@ -27,6 +39,12 @@ import { MatButtonModule } from '@angular/material/button';
     MatSelectModule,
     MatCardModule,
     MatButtonModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatDividerModule,
+    MatIconModule,
+    MatDialogModule,
   ]
 })
 export class AngularMaterialModule { }

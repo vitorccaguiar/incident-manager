@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { IncidentComponent } from './incident/incident.component';
+import { IncidentListComponent } from './incident-list/incident-list.component';
+import { IncidentCreateComponent } from './incident-create/incident-create.component';
 
 const routes: Routes = [
-  { path: 'incident/create', component: IncidentComponent },
+  { path: 'incident/create', component: IncidentCreateComponent },
+  { path: 'incident/list', component: IncidentListComponent },
 ];
 
 @NgModule({

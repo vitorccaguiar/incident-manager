@@ -1,8 +1,8 @@
 <mat-card class='main'>
-  <button mat-button [matMenuTriggerFor]="menu">Cadastrar</button>
+  <button mat-button [matMenuTriggerFor]="menu">Ocorrência</button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink='incident/create'>Ocorrência</button>
-    <button mat-menu-item>Opção 2</button>
+    <button mat-menu-item routerLink='incident/create'>Cadastrar</button>
+    <button mat-menu-item routerLink='incident/list'>Listar</button>
   </mat-menu>
 </mat-card>
 
