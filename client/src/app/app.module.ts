@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { IncidentListComponent } from './incident-list/incident-list.component';
 import { IncidentCreateComponent } from './incident-create/incident-create.component';
 import { IncidentDetailsDialogComponent } from './incident-details-dialog/incident-details-dialog.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { IncidentDetailsDialogComponent } from './incident-details-dialog/incide
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    FormsModule,
   ],
   entryComponents: [
     IncidentDetailsDialogComponent,

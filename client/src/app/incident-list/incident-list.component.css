@@ -14,5 +14,6 @@
 }
 
 .mat-row:hover {
-    background-color: #dee5ef;
-  }
+    background-color: whitesmoke;
+    cursor: pointer;
+}

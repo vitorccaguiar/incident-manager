@@ -24,7 +24,7 @@ export interface Incident {
 })
 export class IncidentListComponent implements OnInit {
 
-  displayedColumns: string[] = ['details', 'id', 'title', 'partnerNumber', 'partnerName', 'incidentDate', 'creationDate', 'status'];
+  displayedColumns: string[] = ['id', 'title', 'partnerNumber', 'partnerName', 'incidentDate', 'creationDate', 'status'];
   dataSource: MatTableDataSource<Incident>;
 
   @ViewChild(MatSort) sort: MatSort;

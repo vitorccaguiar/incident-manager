@@ -3,35 +3,35 @@
   <mat-divider></mat-divider>
   <mat-dialog-content class="container">
     <mat-form-field>
-      <input matInput placeholder="Id" value="{{data.id}}">
+      <input matInput placeholder="Id" [(ngModel)]="data.id" disabled>
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Title" value="{{data.title}}">
+      <input matInput placeholder="Título" [(ngModel)]="data.title">
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Partner Number" value="{{data.partnerNumber}}">
+      <input matInput placeholder="Número da Cota" [(ngModel)]="data.partnerNumber">
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Partner Name" value="{{data.partnerName}}">
+      <input matInput placeholder="Nome do Sócio" [(ngModel)]="data.partnerName">
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Incident Date" value="{{data.incidentDate}}">
+      <input matInput placeholder="Data da Ocorrência" [(ngModel)]="data.incidentDate">
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Creation Date" value="{{data.creationDate}}">
+      <input matInput placeholder="Data de Criação" [(ngModel)]="data.creationDate">
     </mat-form-field>
   
     <mat-form-field>
-      <textarea matInput placeholder="Description" value="{{data.description}}"></textarea>
+      <textarea matInput matTextareaAutosize matAutosizeMinRows=4 placeholder="Descrição" [(ngModel)]="data.description"></textarea>
     </mat-form-field>
 
     <mat-form-field>
-      <textarea matInput placeholder="Analysis" value="{{data.analysis}}"></textarea>
+      <textarea matInput matTextareaAutosize matAutosizeMinRows=4 placeholder="Análise" [(ngModel)]="data.analysis"></textarea>
     </mat-form-field>
   
     <mat-form-field>
@@ -42,7 +42,7 @@
     </mat-form-field>
   </mat-dialog-content>
   <mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button (click)="onNoClick()">Cancelar</button>
     <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Atualizar</button>
   </mat-dialog-actions>
 </mat-card>

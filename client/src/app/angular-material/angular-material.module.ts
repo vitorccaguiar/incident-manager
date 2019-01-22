@@ -9,29 +9,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginatorModule, MatPaginatorIntl } from '@angular/material/paginator';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { CustomMatPaginatorIntl } from '../custom-components/custom-mat-paginator-intl';
 
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    MatMenuModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
-    MatCardModule,
-    MatButtonModule,
-    MatTableModule,
-    MatSortModule,
-    MatPaginatorModule,
-    MatDividerModule,
-    MatIconModule,
-    MatDialogModule,
-  ],
+  imports: [],
   exports: [
     MatMenuModule,
     MatFormFieldModule,
@@ -45,6 +33,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatDividerModule,
     MatIconModule,
     MatDialogModule,
-  ]
+    MatToolbarModule,
+  ],
+  providers: [{provide: MatPaginatorIntl, useClass: CustomMatPaginatorIntl}],
 })
 export class AngularMaterialModule { }

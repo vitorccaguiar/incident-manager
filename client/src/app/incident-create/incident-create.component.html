@@ -1,4 +1,44 @@
 <mat-card class="content">
-  <h2>Cadastro de Ocorrências</h2>
+  <mat-toolbar>
+    <span>Cadastro de Ocorrências</span>
+  </mat-toolbar>
   <mat-divider></mat-divider>
+
+  <div class="container">
+    <mat-form-field>
+      <input matInput placeholder="Título">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Número da Cota">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Nome do Sócio">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Data da Ocorrência">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Data de Criação">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea matInput matTextareaAutosize matAutosizeMinRows=4 placeholder="Descrição"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea matInput matTextareaAutosize matAutosizeMinRows=4 placeholder="Análise"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-select placeholder="Status">
+        <mat-option value="aberto">Aberto</mat-option>
+        <mat-option value="fechado">Fechado</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary">Cadastrar</button>
 </mat-card>
